@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url('https://img.freepik.com/free-vector/minimal-geometric-stripe-shape-background_1409-1014.jpg');
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 .header {
     display: flex;
@@ -15,6 +16,14 @@
     font-size: 24px;
     color: #f9faf8;
     margin-left: 100px;
+    cursor: default;
+}
+.header a {
+    font-weight: 500;
+}
+.header a:hover{
+    transition: .3s ease;
+    color: #3882f6;
 }
 .main-content {
     margin-left: 15px;
@@ -43,7 +52,12 @@ button {
     padding: 10px 30px;
     color: #f9faf8;
     margin-top: 15px;
-
+    cursor: pointer;
+}
+.container-2 .sign-up:hover {
+    background: white;
+    color: #3882f6;
+    transition: .3s ease;
 }
 a {
     color: #e5e7eb;
@@ -61,6 +75,9 @@ ul {
     margin-right: 110px;
 }
 .container-2 {
+    background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Natural-Wood-Panels-Simple-Background-Image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     padding: 100px;
     background-color: #1f2937;
@@ -138,7 +155,6 @@ ul {
     display: flex;
     justify-content: center;
     padding: 100px 50px;
-    border: 1pt solid black;
     display: flex;
 }
 .container5-content {
@@ -147,9 +163,10 @@ ul {
     border-radius: 10px;
     padding: 30px 100px;
     display: flex;
+    justify-content: space-between;
 }
 .container5-text {
-    width: 400px;
+    max-width: 400px;
     margin-right: 75px;
 
 }
@@ -160,12 +177,18 @@ ul {
     justify-content: center;
     text-align: center;
     margin-bottom: 10px;
-
-
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sign-up5:hover {
+    background: white;
+    color: #3882f6;
+    transition: .3s ease;
 }
 .footer {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     margin-top: auto;
     background: #1f2937;
     display: flex;
